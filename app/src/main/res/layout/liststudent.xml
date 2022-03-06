@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ACA388"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:background="#F9E07F"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imagehinhh"
+        android:layout_width="100dp"
+        android:layout_height="150dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Student name"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/TextViewStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="Code :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:id="@+id/TextViewStudentCode"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_view_headline_24"
+                android:layout_marginTop="15dp"
+                android:id="@+id/studentinformation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"></ImageButton>
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_baseline_update_24"
+                android:layout_marginTop="15dp"
+                android:id="@+id/studentupdate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"></ImageButton>
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:layout_marginTop="15dp"
+                android:id="@+id/studentdelete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"></ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

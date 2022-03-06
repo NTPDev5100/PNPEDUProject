@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".academic.Aboutus"
+    android:orientation="vertical"
+    android:background="@color/white">
+<androidx.appcompat.widget.Toolbar
+    android:background="#F77F00"
+    android:id="@+id/toolbaraboutus"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+</androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABOUT US"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#003049"
+        android:fontFamily="sans-serif"
+        android:textSize="25dp"
+        android:background="#F77F00"></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:text="PNP EDU is an education management mobile app created by Nguyen Tien Phat, Le Khanh Nhat and Nguyen Van Phu from class 18D1-TH PM01,
+        HCM University of Econimics and Finance \n\nWith the support of Android Studio and Lecturer Tran Thanh Cong, we expect individuals to have the most satisfying experience through our work.
+        \n\nSincerely,
+        \n\nPnP Tech Team."
+        android:textColor="#003049"
+        android:textSize="15dp"
+        />
+
+    <ImageView
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#003049"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        app:srcCompat="@drawable/edulogopng" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:text="Members:"
+            android:textColor="#003049"
+            android:textSize="15dp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="25dp"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/imgnhat" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#003049"
+                android:text="Name: Le Khanh Nhat
+                \nID: 185050196
+                \nEmail: nhatlk18@uef.edu.vn"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="25dp"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/imgphu" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#003049"
+                android:text="Name: Nguyen Van Phu
+                \nID: 185050204
+                \nEmail: phunv18@uef.edu.vn"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="25dp"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/imgphat" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#003049"
+                android:text="Name: Nguyen Tien Phat
+                \nID: 185050457
+                \nEmail: phatnt218@uef.edu.vn"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

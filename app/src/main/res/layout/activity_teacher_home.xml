@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".academic.ClassActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/loginColor"
+        app:title="Class"
+        android:id="@+id/toolbarClassForTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/listviewclassforteacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoutteacher"
+        android:layout_gravity="center_horizontal|center"
+        android:text="Log out"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_cancel_button"
+        />
+    </LinearLayout>
+
+</LinearLayout>

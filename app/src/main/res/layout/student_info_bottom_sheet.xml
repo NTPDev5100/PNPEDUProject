@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet_layout"
+    android:background="@drawable/shape_login_bottom_sheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:behavior_hideable ="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#F00"
+            android:textStyle="bold"
+            android:text="Student Infomation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:id="@+id/imageviewInforStudentall"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></ImageView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="Student name : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:textColor="#000000"
+                android:text="Nguyen Van A"
+                android:textSize="20dp"
+                android:id="@+id/txtStudentNameall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="Gender : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:textColor="#000000"
+                android:text="Male"
+                android:textSize="20dp"
+                android:id="@+id/txtStudentGenderall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="Student code : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:textColor="#000000"
+                android:text="002"
+                android:textSize="20dp"
+                android:id="@+id/txtStudentCodeall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="Date of birth : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:textColor="#000000"
+                android:text="1/1/2000"
+                android:textSize="20dp"
+                android:id="@+id/txtStudentdoball"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain"
+    >
+    <LinearLayout
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/background_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".academic.UpdateClassActivity">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="#F44336"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Update Class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextUpdateClassName"
+            android:hint="Class name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextUpdateClassCode"
+            android:hint="Class code"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextUpdateClassStudyTime"
+            android:hint="Study time"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextUpdateClassSchedule"
+            android:hint="Schedule"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextUpdateClassStartday"
+            android:hint="Start day"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextUpdateClassEndday"
+            android:hint="End day"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <Button
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/background_btncancel"
+            android:layout_gravity="center"
+            android:id="@+id/buttonUpdateClass"
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+</ScrollView>

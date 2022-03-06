@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:behavior_hideable ="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="Welcome Back"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:id="@+id/username_register"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_edit_text"
+        android:padding="12.5dp"
+        />
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/password_register"
+        android:background="@drawable/shape_edit_text"
+        android:padding="12.5dp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:id="@+id/repassword_register"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_edit_text"
+        android:padding="12.5dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accept_register"
+        android:layout_alignParentBottom="true"
+        android:text="Accept"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_register_button"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:layout_alignParentBottom="true"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_cancel_button"
+        />
+
+
+</LinearLayout>

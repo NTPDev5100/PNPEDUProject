@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain"
+   >
+    <LinearLayout
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/background_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".academic.UpdateTeacherActivity">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="#F44336"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Update Teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextTeacherNameUpdate"
+            android:hint="Teacher name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Gender : "
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></TextView>
+
+        <RadioGroup
+            android:paddingTop="15dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+            <RadioButton
+                android:textColor="#000000"
+                android:text="Male"
+                android:checked="true"
+                android:id="@+id/radiobuttonMaleUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+            <RadioButton
+                android:layout_marginLeft="100dp"
+                android:textColor="#000000"
+                android:text="Female"
+                android:checked="true"
+                android:id="@+id/radiobuttonFemaleUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+        </RadioGroup>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextTeacherCodeUpdate"
+            android:hint="Teacher code"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:inputType="datetime"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextTeacherBirhtdayUpdate"
+            android:hint="Birthday"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextTeacherEmailUpdate"
+            android:hint="Email"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextTeacherPasswordUpdate"
+            android:hint="Password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+
+        <Button
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/background_btncancel"
+            android:layout_gravity="center"
+            android:id="@+id/buttonUpdateTeacher"
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+</ScrollView>

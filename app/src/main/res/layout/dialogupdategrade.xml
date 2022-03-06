@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="#A8A194">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Do you want to update ?"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:textColor="#223745"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="15dp"
+            android:id="@+id/buttonYesupdateGrade"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:backgroundTint="#E0D2B4"
+            android:textColor="#223745"></Button>
+
+        <Button
+            android:layout_marginRight="15dp"
+            android:id="@+id/buttonNoupdateGrade"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:backgroundTint="#E0D2B4"
+            android:textColor="#223745"></Button>
+
+    </LinearLayout>
+</LinearLayout>

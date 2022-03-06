@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain"
+    >
+    <LinearLayout
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_white"
+        tools:context=".academic.AddStudentActivity">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="#F44336"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Add Student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:id="@+id/imageviewStudent"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></ImageView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCamStudent"
+            android:text="Camera"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="40dp"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonGalleryStudent"
+            android:text="Gallery"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="40dp"></androidx.appcompat.widget.AppCompatButton>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextStudentName"
+            android:hint="Student name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Gender : "
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></TextView>
+
+        <RadioGroup
+            android:paddingTop="15dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+            <RadioButton
+                android:textColor="#000000"
+                android:text="Male"
+                android:checked="true"
+                android:id="@+id/radiobuttonMaleStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+            <RadioButton
+                android:layout_marginLeft="100dp"
+                android:textColor="#000000"
+                android:text="Female"
+                android:checked="true"
+                android:id="@+id/radiobuttonFemaleStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+        </RadioGroup>
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/EditTextStudentCode"
+            android:hint="Student code"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+        <EditText
+            android:inputType="datetime"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/EditTextStudentBirhtday"
+            android:hint="Birthday"
+            android:layout_width="300dp"
+            android:layout_height="60dp"></EditText>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/buttonAddStudent"
+            android:text="Add"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/background_btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            ></Button>
+
+    </LinearLayout>
+</ScrollView>

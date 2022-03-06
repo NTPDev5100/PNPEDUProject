@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet_layout"
+    android:background="@drawable/shape_login_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:behavior_hideable ="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="Academic officer"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login to your account"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:id="@+id/username_login"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_edit_text"
+        android:padding="12.5dp"
+        />
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/password_login"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="textPassword"
+        android:padding="12.5dp"
+        android:layout_marginBottom="20dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlogin_login"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_login_button"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:layout_alignParentBottom="true"
+        android:text="Cancel"
+        android:layout_above="@+id/tvregister"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_cancel_button"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:id="@+id/tvregister"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

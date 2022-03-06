@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain"
+    android:padding="20dp"
+    tools:context="com.example.pnpedu.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagline"
+            android:layout_below="@+id/logo"
+            android:text="Welcome to"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="177dp"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        app:srcCompat="@drawable/edulogopng" />
+</LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:layout_above="@+id/loginteacher"
+            android:text="Academic Section"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_login_button"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginteacher"
+            android:layout_alignParentBottom="true"
+            android:text="Teacher Section"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_register_button"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/login_bottom_sheet"></include>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
